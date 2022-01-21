@@ -1,0 +1,33 @@
+Updating A youtube link info (Partially by PATCH or Totally by PUT)
+---
+tags:
+  - Youtube Links
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+  - name: body
+    description: The body should contain the updated bookmark url and title
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - "url"
+        - "Body"
+      properties:
+        url:
+          type: "string"
+          example: "www.facebook.com"
+        body:
+          type: "string"
+          example: "facebook"
+responses:
+  200:
+    description: Link updated 
+
+  400:
+    description: Not a valid youtube url !
+
+  404:
+    description: Youtube Link Not Found !

@@ -1,0 +1,15 @@
+GET stats about Singers 
+---
+tags:
+  - Singers of youtube music 
+
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+
+responses:
+  200:
+    description: Singers and their respective number of songs 
+  401:
+    description: Fails to get items due to authentication error
