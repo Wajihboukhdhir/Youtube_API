@@ -92,7 +92,6 @@ def me():
 
 
 @auth.post('/token/refresh')
-@swag_from('./src/docs/auth/refreshtoken.yml')
 
 @jwt_required(refresh=True)
 def refresh_users_token():
