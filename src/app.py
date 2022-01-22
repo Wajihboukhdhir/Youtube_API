@@ -1,6 +1,6 @@
 from flask import Flask, jsonify,redirect
 import os
-from http_status_codes import HTTP_200_OK, HTTP_226_IM_USED, HTTP_302_FOUND, HTTP_404_NOT_FOUND, HTTP_500_INTERNAL_SERVER_ERROR
+from src.constants.http_status_codes import HTTP_200_OK, HTTP_226_IM_USED, HTTP_302_FOUND, HTTP_404_NOT_FOUND, HTTP_500_INTERNAL_SERVER_ERROR
 from flask_jwt_extended import JWTManager
 from auth import auth
 from bookmarks import bookmarks
