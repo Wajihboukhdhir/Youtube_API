@@ -4,8 +4,8 @@ from flask.json import jsonify
 from flask_jwt_extended.view_decorators import jwt_required
 from flask_sqlalchemy import Pagination
 import validators
-from database import Youtube,db,Singer
-from constants.http_status_codes import HTTP_200_OK, HTTP_201_CREATED, HTTP_204_NO_CONTENT, HTTP_400_BAD_REQUEST, HTTP_404_NOT_FOUND, HTTP_409_CONFLICT
+from src.database import Youtube,db,Singer
+from src.constants.http_status_codes import HTTP_200_OK, HTTP_201_CREATED, HTTP_204_NO_CONTENT, HTTP_400_BAD_REQUEST, HTTP_404_NOT_FOUND, HTTP_409_CONFLICT
 from flask_jwt_extended import get_jwt_identity
 from flasgger import Swagger,swag_from
 
