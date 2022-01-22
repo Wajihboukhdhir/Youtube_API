@@ -28,3 +28,4 @@ validators
 Werkzeug
 zipp
 uwsgi
+psycopg2
