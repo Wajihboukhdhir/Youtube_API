@@ -2,13 +2,13 @@ from flask import Flask, jsonify,redirect
 import os
 from src.constants.http_status_codes import HTTP_200_OK, HTTP_226_IM_USED, HTTP_302_FOUND, HTTP_404_NOT_FOUND, HTTP_500_INTERNAL_SERVER_ERROR
 from flask_jwt_extended import JWTManager
-from auth import auth
-from bookmarks import bookmarks
-from youtube import youtubes
+from src.auth import auth
+from src.bookmarks import bookmarks
+from src.youtube import youtubes
 
-from database import db,Bookmark,Youtube
+from src.database import db,Bookmark,Youtube
 from flasgger import Swagger,swag_from
-from config.swagger import template,swagger_config
+from src.config.swagger import template,swagger_config
 def create_app(test_config=None):
       app = Flask(__name__,instance_relative_config=True)
       app.config['JSON_SORT_KEYS'] = False
