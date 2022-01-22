@@ -1,0 +1,30 @@
+Bookmark Adding and Getting all the the youtube links information
+---
+tags:
+  - Youtube Links
+parameters:
+  - name: body
+    description: The body should contain the bookmark url and title
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - "url"
+        - "Body"
+      properties:
+        url:
+          type: "string"
+          example: "www.youtubegerhehlisrgzihe.com"
+        body:
+          type: "string"
+          example: "tunisian mezwed"
+responses:
+  201:
+    description: a youtube link added
+
+  400:
+    description: Not a valid youtube url !
+
+  409:
+    description: youtube video already exists !

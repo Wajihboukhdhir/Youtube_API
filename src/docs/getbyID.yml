@@ -1,0 +1,18 @@
+Getting A specific Youtube Link (By mentioning its ID)
+---
+tags:
+  - Youtube Links
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+  - in: path
+    name: short_url
+    required: true
+
+responses:
+  200:
+    description: Item details shown
+
+  404:
+    description: Item not found

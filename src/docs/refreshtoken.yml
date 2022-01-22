@@ -1,0 +1,13 @@
+Refresh Token
+---
+tags:
+  - Authentication
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+responses:
+  200:
+    description: Token Refresh Successful
+  422:
+    description: Only refresh tokens are allowed !

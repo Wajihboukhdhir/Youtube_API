@@ -1,0 +1,18 @@
+Bookmark deletion
+---
+tags:
+  - Bookmarks
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+  - in: path
+    name: short_url
+    required: true
+
+responses:
+  302:
+    description: Item deleted Successfully
+
+  404:
+    description: Item not found

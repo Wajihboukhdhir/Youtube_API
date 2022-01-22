@@ -1,0 +1,30 @@
+Bookmark Adding and Getting all the the bookmarks information
+---
+tags:
+  - Bookmarks
+parameters:
+  - name: body
+    description: The body should contain the bookmark url and title
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - "url"
+        - "Body"
+      properties:
+        url:
+          type: "string"
+          example: "www.facebook.com"
+        body:
+          type: "string"
+          example: "facebook"
+responses:
+  201:
+    description: a bookmark created
+
+  400:
+    description: Not a valid url !
+
+  409:
+    description: url exists !

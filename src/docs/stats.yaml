@@ -1,0 +1,15 @@
+GET stats about Youtube Links
+---
+tags:
+  - Youtube Links
+
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+
+responses:
+  200:
+    description: Youtube links stats
+  401:
+    description: Fails to get items due to authentication error

@@ -1,0 +1,13 @@
+Get my user info (ONLY me -->PRIVACY)
+---
+tags:
+  - Authentication
+parameters:
+  - in: header
+    name: Authorization
+    required: true  
+responses:
+  200:
+    description: OK
+  404:
+    description: Fails to Get due to bad request data
