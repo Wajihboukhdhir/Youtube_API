@@ -11,7 +11,7 @@ from flasgger import Swagger,swag_from
 from src.config.swagger import template,swagger_config
       app = Flask(__name__,instance_relative_config=True)
       app.config['JSON_SORT_KEYS'] = False
-
+def create_app(test_config=None):
       if test_config is None:
        app.config.from_mapping(
               SECRET_KEY=os.environ.get
