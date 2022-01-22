@@ -210,7 +210,7 @@ def statistics():
 
 
 @youtubes.get("/singers")
-@swag_from('youtube_api/src/docs/auth/Singers.yaml')
+@swag_from('C:/Users/Leila/Desktop/bookmarksrestapi/src/docs/auth/Singers.yaml')
 
 
 @jwt_required()
