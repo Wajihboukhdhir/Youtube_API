@@ -87,3 +87,4 @@ def create_app(test_config=None):
             return jsonify({"ERROR":"INTERNAL SERVER ERROR!!"}),HTTP_500_INTERNAL_SERVER_ERROR
       
       return app
+application=create_app()
