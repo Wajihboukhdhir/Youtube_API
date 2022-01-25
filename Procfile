@@ -1,1 +1,1 @@
-web: gunicorn -b :5000 src.runner:app
+web: gunicorn src.runner:app
