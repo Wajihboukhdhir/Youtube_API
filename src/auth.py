@@ -1,5 +1,5 @@
 from os import access
-from flask import Blueprint,request,jsonify
+from flask import Blueprint,request,jsonify,app
 from flask_jwt_extended.utils import get_jwt_identity
 from werkzeug.security import check_password_hash,generate_password_hash
 from src.constants.http_status_codes import HTTP_200_OK, HTTP_201_CREATED, HTTP_400_BAD_REQUEST, HTTP_401_UNAUTHORIZED, HTTP_409_CONFLICT
