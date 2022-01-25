@@ -210,7 +210,7 @@ def statistics():
 
 
 @youtubes.get("/singers")
-@swag_from('./docs/Singers.yml')
+@swag_from('./docs/Singers.yaml')
 
 
 @jwt_required()
